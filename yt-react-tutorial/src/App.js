@@ -1,12 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Main from "./Componets/Main";
 
 function App() {
-  return(
-    <div>
-      <h1>Supun Wellappili...</h1>
-    </div>
-  )
+  return (
+    <>
+      <div>
+        <h1>Supun Wellappili</h1>
+      </div>
+     
+      <Main />
+      <Main />
+      <Main />
+      <Main />
+      
+    </>
+  );
 }
 
 export default App;
