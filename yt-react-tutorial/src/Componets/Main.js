@@ -1,13 +1,16 @@
-const name = 'Supun Wellapili';
-const position = 'Web Developer';
-const city ="Galle";
+const name = "Supun Wellapili";
+const position = "Web Developer";
 
 const myObj = {
-    name :`${name}`,
-    position :`${position}`
-}
+  // create object
+  name: `${name}`,
+  position: `${position}`,
+  city : "Galle",
+};
 
 function Main(props) {
+
+  const { city } = myObj; //Object Destructing
 
   return (
     <div>
@@ -21,8 +24,9 @@ function Main(props) {
       <div>{name}</div>
       <div>{myObj.position}</div>
       <div>{position}</div>
+      <div>{city}</div>
+      <div>--------------------------------------------</div>
       {props.children}
-     
     </div>
   );
 }
