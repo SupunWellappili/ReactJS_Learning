@@ -1,4 +1,14 @@
+const name = 'Supun Wellapili';
+const position = 'Web Developer';
+const city ="Galle";
+
+const myObj = {
+    name :`${name}`,
+    position :`${position}`
+}
+
 function Main(props) {
+
   return (
     <div>
       This is main component
@@ -8,7 +18,11 @@ function Main(props) {
         <li>C#</li>
         <li>Python</li>
       </ul>
+      <div>{name}</div>
+      <div>{myObj.position}</div>
+      <div>{position}</div>
       {props.children}
+     
     </div>
   );
 }
