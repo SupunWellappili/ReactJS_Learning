@@ -10,12 +10,12 @@ const mainBlock = myData.map(({ name, city, image, position, id }) => {
 });
 
 function App() {
+  const [myVar, setMyVar] = useState("Amila");
 
-  let myVar ="Nimal"
-  
   const clickHandle = () => {
-    myVar = "Pavan";
-    console.log(myVar);
+    // myVar = "Pavan";
+    setMyVar('Nisan');
+    console.log(myVar); //Amila(Render Wena mohothakata pera)
   };
 
   return (
