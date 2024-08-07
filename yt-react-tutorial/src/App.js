@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import "./App.css";
 import Main from "./Componets/Main";
 import { myData } from "./Data/MyData";
@@ -10,17 +11,17 @@ const mainBlock = myData.map(({ name, city, position,id }) => {
 
 const NewBlock = ()=>{
   return (
-    <>
+    <Fragment>
       {myData?.map(({ name, city, position, id }) => {
         return <Main key={id} name={name} city={city} position={position} />;
       })}
-    </>
+    </Fragment>
   );
 }
 
 function App() {
   return (
-    <>
+    <Fragment>
       <div>
         <h1>Supun Wellappili.</h1>
       </div>
@@ -39,7 +40,7 @@ function App() {
       {/* {mainBlock} */}
 
       <NewBlock />
-    </>
+    </Fragment>
   );
 }
 
