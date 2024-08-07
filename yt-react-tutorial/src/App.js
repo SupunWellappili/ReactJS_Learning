@@ -9,13 +9,13 @@ const mainBlock = myData.map(({ name, city, position, id }) => {
 
 function App() {
   return (
-    <Fragment>
-      <div>
+    <div className="main__container">
+      <div >
         <h1>Supun Wellappili.</h1>
       </div>
       <p>I'm a Student.</p>
-      <div className="mainBlock_container">{mainBlock}</div>
-    </Fragment>
+      <div className="mainBlock__container">{mainBlock}</div>
+    </div>
   );
 }
 

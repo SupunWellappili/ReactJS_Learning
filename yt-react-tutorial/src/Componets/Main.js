@@ -3,20 +3,19 @@ import { Fragment } from "react";
 // function Main(props) {
 function Main({ name, city, position }) {
   return (
-    <Fragment>
-        <div>--------------------------------------------</div>
+    <div>
       <img
         alt="Laptop picture"
-        src="https://ssl.robocup.org/wp-content/uploads/2021/12/20160629-IMG_0283_1.jpg"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIoXs7lFE--k4gQuVXuK6Re7C7xslvf-NhNg&usqp=CAU"
       />
-      <div>
+      <div className="mainBlock__details">
         <h3>{name}</h3>
         <p>
           <span>{city}</span>
           <span>{position}</span>
         </p>
       </div>
-    </Fragment>
+    </div>
   );
 }
 
