@@ -38,7 +38,6 @@ function App() {
 
       {/* //Object Destruction */}
       {/* {mainBlock} */}
-
       <NewBlock />
     </Fragment>
   );
