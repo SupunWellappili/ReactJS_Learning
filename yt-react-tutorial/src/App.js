@@ -12,7 +12,8 @@ function App() {
         <p>I'm a children</p>
       </Main>
      
-      <Main />
+      <Main name='supunzz' city='Galleee' position='web developerrrr' />
+      <Main name='Wellappiliii' city='Panaduraaa' position='app developerrrr' />
       <Main />
       <Main />
       <Main />

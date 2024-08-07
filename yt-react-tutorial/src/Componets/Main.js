@@ -1,3 +1,4 @@
+/*
 const name = "Supun Wellapili";
 const position = "Web Developer";
 
@@ -5,12 +6,16 @@ const myObj = {
   // create object
   name: `${name}`,
   position: `${position}`,
-  city : "Galle",
+  city: "Galle",
 };
+*/
 
-function Main(props) {
 
-  const { city } = myObj; //Object Destructing
+// function Main(props) {
+function Main({ children, name,city, position }) {
+  //   console.log(props);
+
+  //const { city } = myObj; //Object Destructing
 
   return (
     <div>
@@ -22,11 +27,12 @@ function Main(props) {
         <li>Python</li>
       </ul>
       <div>{name}</div>
-      <div>{myObj.position}</div>
+      {/* <div>{myObj.position}</div> */}
       <div>{position}</div>
       <div>{city}</div>
       <div>--------------------------------------------</div>
-      {props.children}
+      {/* {props.children} */}
+      {children}
     </div>
   );
 }
