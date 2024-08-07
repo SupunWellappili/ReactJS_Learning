@@ -3,8 +3,8 @@ import "./App.css";
 import Main from "./Componets/Main";
 import { myData } from "./Data/MyData";
 
-const mainBlock = myData.map(({ name, city, position, id }) => {
-  return <Main key={id} name={name} city={city} position={position} />;
+const mainBlock = myData.map(({ name, city,image,position, id }) => {
+  return <Main key={id} name={name} image={image} city={city} position={position} />;
 });
 
 function App() {
