@@ -11,7 +11,7 @@ const mainBlock = myData.map(({ name, city, position,id }) => {
 const NewBlock = ()=>{
   return (
     <>
-      {myData.map(({ name, city, position, id }) => {
+      {myData?.map(({ name, city, position, id }) => {
         return <Main key={id} name={name} city={city} position={position} />;
       })}
     </>
