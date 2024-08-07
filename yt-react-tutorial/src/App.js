@@ -33,26 +33,20 @@ function App() {
       <Main>
         <h5>Supunzzzzz</h5>
         <p>I'm a children</p>
-     </Main>
-
-     //Object Array (MAP)
-     {/* {
+      </Main>
+      {/* Object Array (MAP) */}
+      {/* {
         myData.map((ele=>{
           return <Main name={ele.name} city={ele.city} position={ele.position}/>
         }))
 
      } */}
-
-     //Object Destruction
-     {
-        myData.map(({name,city,position})=>{
-          return <Main name={name} city={city} position={position}/>
-        })
-
-     }
+      {/* //Object Destruction */}
+      {myData.map(({ name, city, position },index) => {
+        return <Main key={index} name={name} city={city} position={position} />;
+      })}
     </>
   );
 }
 
 export default App;
-
